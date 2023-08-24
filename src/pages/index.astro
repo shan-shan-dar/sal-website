@@ -1,8 +1,165 @@
 ---
 import Nav from "../components/Navigation";
+import hero_background from "/hero_background.png";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1>Helo</h1>
+  <main
+    class='px-40 h-screen w-full bg-no-repeat bg-cover flex items-center'
+    style={`background-image: url('${hero_background}');`}
+  >
+    <div class='max-w-xl'>
+      <h1 class='text-7xl font-bitter font-black text-lightgreen mb-5'>
+        The Save a <br />Life Initiative
+      </h1>
+      <p class='max-w-lg text-lg font-poppins font-normal text-white mb-14'>
+        We strive to make Basic Life Support (BLS) education accessible and
+        straightforward, turning individuals into vital responders and villages
+        into resilient communities.
+      </p>
+      <div class='flex space-x-7'>
+        <button
+          class='outline-white hover:outline-lightgreen outline bg-white hover:bg-lightgreen transition-all text-dartmouth text-xl font-semibold px-6 py-3 rounded-lg flex items-center'
+        >
+          <div class='text-left mr-3'>
+            <span class='text-sm font-medium'>Learn more about</span><br />Rural
+            Outreach
+          </div>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='2'
+            stroke='currentColor'
+            class='w-8 h-8'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25'></path>
+          </svg>
+        </button>
+        <button
+          class='outline-white hover:outline-lightgreen outline hover:bg-lightgreen transition-all text-white hover:text-dartmouth text-xl font-semibold px-6 py-3 rounded-lg flex items-center'
+        >
+          <div class='text-left mr-3'>
+            <span class='text-sm font-medium'>Learn more about</span><br />IAP
+            CPR App
+          </div>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='2'
+            stroke='currentColor'
+            class='w-8 h-8'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25'></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <section id='stats' class='px-40 py-20 w-full flex items-center bg-white'>
+    <div class='flex justify-between w-full max-w-screen-xl mx-auto'>
+      <div class='text-left'>
+        <p class='text-7xl font-bitter font-black text-dartmouth'>52</p>
+        <p class='text-xl font-poppins font-medium'>
+          Training Sessions <br /> Organized
+        </p>
+      </div>
+      <div class='text-left'>
+        <p class='text-7xl font-bitter font-black text-dartmouth'>24</p>
+        <p class='text-xl font-poppins font-medium'>
+          Communities <br />Empowered
+        </p>
+      </div><div class='text-left'>
+        <p class='text-7xl font-bitter font-black text-dartmouth'>5K+</p>
+        <p class='text-xl font-poppins font-medium'>
+          Individuals <br /> Reached
+        </p>
+      </div><div class='text-left'>
+        <p class='text-7xl font-bitter font-black text-dartmouth'>1K+</p>
+        <p class='text-xl font-poppins font-medium'>
+          IAP CPR App <br />Downloads
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id='rural-outreach' class='py-6 flex w-fullitems-center bg-darkest'>
+    <div class='w-screen'>
+      <h2
+        class='px-14 text-10xl font-bitter text-lightgreen opacity-60 font-extrabold mb-16'
+      >
+        Rural Outreach
+      </h2>
+
+      <div class='justify-center px-40'>
+        <div class='justify-start flex gap-32 m y-20'>
+          <img src='/hands_on.png' alt='Image 1' class='max-h-96 rounded-4xl' />
+          <div class='flex flex-col justify-center'>
+            <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
+              Hands-on Sessions
+            </h3>
+            <p class='font-poppins font-normal text-white text-lg'>
+              Save a Life empowers rural communities with vital CPR skills
+              through workshops, collaborations, and partnerships. Each session
+              starts with a discussion on cardiac emergencies, followed by
+              hands-on instruction and practice, using professional mannequins.
+            </p>
+          </div>
+        </div>
+
+        <div class='justify-start flex gap-32 my-20'>
+          <div class='flex flex-col justify-center'>
+            <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
+              Accessibility and Inclusivness
+            </h3>
+            <p class='font-poppins font-normal text-white text-lg'>
+              From panchayats to academies and trekking groups Save a Life is
+              dedicated to disseminating CPR knowledge far and wide. We tailor
+              every to suit its audience, simplify content for broader audiences
+              and enhancing it for medical students. Sessions are also conducted
+              in Marathi or Hindi as needed, ensuring accessibility remains
+              paramount.
+            </p>
+          </div>
+
+          <img
+            src='/access_inclu.png'
+            alt='Image 1'
+            class='max-h-96 rounded-4xl'
+          />
+        </div>
+
+        <div class='justify-start flex gap-32 my-20'>
+          <img
+            src='/versatility.png'
+            alt='Image 1'
+            class='max-h-96 rounded-4xl'
+          />
+          <div class='flex flex-col justify-center'>
+            <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
+              Versatility
+            </h3>
+            <p class='font-poppins font-normal text-white text-lg'>
+              Amidst challenges, the initiative endured. Online sessions
+              replaced in-person workshops during the pandemic, and we adapted
+              to outdoor sessions with smaller groups to abide by COVID
+              guidelines, ensuring uninterrupted knowledge flow. Our pursuits
+              include liaising with government bodies and working with the
+              Indian Academy of Pediatrics to develop and launch the IAP CPR
+              App.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
