@@ -22,6 +22,9 @@ module.exports = {
       borderRadius: {
         "4xl": "3rem",
       },
+      backgroundImage: {
+        "hero-image": "url('/hero_background.png')",
+      },
     },
   },
   plugins: [],

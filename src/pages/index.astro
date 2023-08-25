@@ -1,19 +1,16 @@
 ---
 import Nav from "../components/Navigation";
-import hero_background from "/hero_background.png";
 import Layout from "../layouts/Layout.astro";
+import Stat from "../components/StatDisplay";
 ---
 
 <Layout>
-  <main
-    class='px-40 h-screen w-full bg-no-repeat bg-cover flex items-center'
-    style={`background-image: url('${hero_background}');`}
-  >
-    <div class='max-w-xl'>
+  <main class='px-40 h-screen bg-hero-image bg-cover flex items-center'>
+    <div class='max-w-[60ch]'>
       <h1 class='text-7xl font-bitter font-black text-lightgreen mb-5'>
         The Save a <br />Life Initiative
       </h1>
-      <p class='max-w-lg text-lg font-poppins font-normal text-white mb-14'>
+      <p class='max-w-lg text-lg text-white mb-14'>
         We strive to make Basic Life Support (BLS) education accessible and
         straightforward, turning individuals into vital responders and villages
         into resilient communities.
@@ -65,35 +62,18 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </main>
 
-  <section id='stats' class='px-40 py-20 w-full flex items-center bg-white'>
-    <div class='flex justify-between w-full max-w-screen-xl mx-auto'>
-      <div class='text-left'>
-        <p class='text-7xl font-bitter font-black text-dartmouth'>52</p>
-        <p class='text-xl font-poppins font-medium'>
-          Training Sessions <br /> Organized
-        </p>
-      </div>
-      <div class='text-left'>
-        <p class='text-7xl font-bitter font-black text-dartmouth'>24</p>
-        <p class='text-xl font-poppins font-medium'>
-          Communities <br />Empowered
-        </p>
-      </div><div class='text-left'>
-        <p class='text-7xl font-bitter font-black text-dartmouth'>5K+</p>
-        <p class='text-xl font-poppins font-medium'>
-          Individuals <br /> Reached
-        </p>
-      </div><div class='text-left'>
-        <p class='text-7xl font-bitter font-black text-dartmouth'>1K+</p>
-        <p class='text-xl font-poppins font-medium'>
-          IAP CPR App <br />Downloads
-        </p>
-      </div>
-    </div>
+  <section
+    id='stats'
+    class='px-40 py-20 flex items-center justify-between bg-white'
+  >
+    <Stat number='52' label='Training Sessions Conducted' />
+    <Stat number='24' label='Communities Empowered' />
+    <Stat number='5K+' label='Individuals Reached' />
+    <Stat number='1K+' label='IAP CPR App Downloads' />
   </section>
 
-  <section id='rural-outreach' class='py-6 flex w-fullitems-center bg-darkest'>
-    <div class='w-screen'>
+  <section id='rural-outreach' class='py-6 w-fullitems-center bg-darkest'>
+    <div>
       <h2
         class='px-14 text-10xl font-bitter text-lightgreen opacity-60 font-extrabold mb-16'
       >
