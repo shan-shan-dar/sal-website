@@ -2,6 +2,7 @@
 import Nav from "../components/Navigation";
 import Layout from "../layouts/Layout.astro";
 import Stat from "../components/StatDisplay";
+import Testi from "../components/TestimonialCard";
 ---
 
 <Layout>
@@ -72,7 +73,7 @@ import Stat from "../components/StatDisplay";
     <Stat number='1K+' label='IAP CPR App Downloads' />
   </section>
 
-  <section id='rural-outreach' class='py-6 w-fullitems-center bg-darkest'>
+  <section id='rural-outreach' class='py-6 bg-darkest'>
     <div>
       <h2
         class='px-14 text-10xl font-bitter text-lightgreen opacity-60 font-extrabold mb-16'
@@ -80,8 +81,8 @@ import Stat from "../components/StatDisplay";
         Rural Outreach
       </h2>
 
-      <div class='justify-center px-40'>
-        <div class='justify-start flex gap-32 m y-20'>
+      <div class='px-40'>
+        <div class='flex gap-32 mb-16'>
           <img src='/hands_on.png' alt='Image 1' class='max-h-96 rounded-4xl' />
           <div class='flex flex-col justify-center'>
             <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
@@ -96,7 +97,7 @@ import Stat from "../components/StatDisplay";
           </div>
         </div>
 
-        <div class='justify-start flex gap-32 my-20'>
+        <div class='flex gap-32 mb-16'>
           <div class='flex flex-col justify-center'>
             <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
               Accessibility and Inclusivness
@@ -118,7 +119,7 @@ import Stat from "../components/StatDisplay";
           />
         </div>
 
-        <div class='justify-start flex gap-32 my-20'>
+        <div class='flex gap-32 mb-16'>
           <img
             src='/versatility.png'
             alt='Image 1'
@@ -140,6 +141,113 @@ import Stat from "../components/StatDisplay";
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id='testimonials' class='px-40 py-20 bg-lightgreen'>
+    <div class='grid gap-10 grid-cols-2 mb-16 max-w-6xl mx-auto'>
+      <!-- Left Side -->
+      <div class='my-auto ycol-span-1'>
+        <div class='my-auto'>
+          <h3
+            class='font-bitter font-bold text-dartmouth text-4xl mb-5 max-w-[20ch]'
+          >
+            Hear the first-hand account of a life transformed by the Save a Life
+            Initiative.
+          </h3>
+          <p
+            class='font-poppins font-normal text-darkest text-xl max-w-[40ch] mb-9'
+          >
+            This powerful testimonial showcases the real-world success story of
+            an individual who stepped up in critical moments, becoming a
+            confident responder and making a difference.
+          </p>
+          <button
+            class='outline-dartmouth outline bg-transparent hover:bg-dartmouth transition-all text-dartmouth hover:text-lightgreen text-xl font-semibold px-6 py-3 rounded-lg flex items-center max-w-[264px]'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='currentColor'
+              class='w-8 h-8'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'
+              ></path>
+            </svg>
+            <div class='text-left text-xl ml-3'>Share your story</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side (Testimonials) -->
+      <div class='flex gap-8 p-4 bg-white rounded-lg shadow-md'>
+        <img
+          src='/rupali.jpg'
+          alt='Testimonial'
+          class='max-w-[216px] rounded-lg'
+        />
+
+        <div class='flex-grow'>
+          <p class='text-lg text-darkest'>
+            “During a visit to my marital home, I witnessed my brother collapse.
+            Banking on Save a Life's CPR training, I took the lead. In under 5
+            minutes of focused chest compressions, my brother regained
+            consciousness. One never knows when they may be thrown into my
+            position, and being prepared to help correctly is important.”
+          </p>
+
+          <p class='text-lg text-dartmouth mt-6'>Rupali Gundal</p>
+          <p class='text-base text-dartmouth opacity-80'>
+            Matron at Sahyadri School and Resident of Gundalwadi
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='testimonials' class='px-40 py-20 bg-dartmouth'>
+    <div class='max-w-4xl mx-auto text-center'>
+      <!-- Title -->
+      <h2 class='text-8xl font-extrabold font-bitter text-lightgreen mb-6'>
+        IAP CPR App
+      </h2>
+
+      <!-- Paragraph -->
+      <p class='text-2xl mt-10 mx-auto max-w-[50ch] text-white mb-8'>
+        With endorsement and funding from the Indian Academy of Pediatrics (IAP)
+        BLS group, we developed an intuitive app for learning, revising and
+        practicing CPR techniques for both medical professionals and laypersons.
+      </p>
+
+      <!-- Button -->
+      <button
+        class='mx-auto outline-white hover:outline-lightgreen outline bg-white hover:bg-lightgreen transition-all text-dartmouth text-xl font-semibold px-6 py-3 rounded-lg flex items-center'
+      >
+        <div class='text-left mr-3'>
+          <span class='text-sm font-medium'>Learn more about</span><br />IAP CPR
+          App
+        </div>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke-width='2'
+          stroke='currentColor'
+          class='w-8 h-8'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25'></path>
+        </svg>
+      </button>
+
+      <!-- Images? -->
     </div>
   </section>
 </Layout>
