@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PersonCard from "../components/PersonCard";
+---
+
+<Layout>
+  <main id='rural-outreach' class='py-6 bg-dartmouth pb-32'>
+    <div>
+      <h2
+        class='px-14 text-10xl font-bitter text-lightgreen opacity-60 font-extrabold mb-16'
+      >
+        The Team
+      </h2>
+
+      <div class='px-40'>
+        <div class='flex gap-32 mb-36'>
+          <img
+            src='/darshan.jpg'
+            alt='Image 1'
+            class='w-96 h-96 mx-auto rounded-4xl'
+          />
+          <div class='flex flex-col justify-center'>
+            <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-2'>
+              Darshan Shah
+            </h3>
+            <p class='text-athena font-medium text-2xl mb-7'>
+              Founder, Volunteer
+            </p>
+            <p class='text-xl text-white'>
+              In areas like Sahyadri's locality, where quick access to
+              healthcare is unavailable, avoidable cardiac arrest deaths plague
+              families and villages. Working with the medical team at Sahyadri,
+              I set out to learn about and address this problem, gradually
+              building capacity and reach. The aim is to empower communities
+              with this life-saving knowledge, making them independent and
+              resilient to emergencies.
+            </p>
+          </div>
+        </div>
+
+        <div class='px-144 grid grid-cols-3 gap-x-16 gap-y-36'>
+          <PersonCard
+            image='/rectangle.png'
+            name='Reshma Shah'
+            about='Mentor & CPR Instructor'
+          />
+          <PersonCard
+            image='/rectangle.png'
+            name='Pradnya Virnak'
+            about='& Sahyadri Medical Unit'
+          />
+          <PersonCard
+            image='/rectangle.png'
+            name='Bhavesh Shah'
+            about='CPR Instructor'
+          />
+          <PersonCard
+            image='/rectangle.png'
+            name='Padmapriya Shirali'
+            about='Principal, Sahyadri'
+          />
+          <PersonCard
+            image='/rectangle.png'
+            name='Milind More'
+            about='& Sahyadri Aministration'
+          />
+          <PersonCard
+            image='/rectangle.png'
+            name='Krishna Abrol'
+            about='& Student Volunteers'
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

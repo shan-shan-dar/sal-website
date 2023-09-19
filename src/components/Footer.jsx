@@ -38,7 +38,7 @@ export default function Foot() {
                 <a href='#'>Home</a>
               </li>
               <li>
-                <a href='#'>About</a>
+                <a href='#'>Team</a>
               </li>
               <li>
                 <a href='#'>Outreach</a>

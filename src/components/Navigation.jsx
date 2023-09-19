@@ -11,7 +11,7 @@ export default function Nav() {
 
         <div className='flex gap-12 text-md'>
           <a href='/'>Home</a>
-          <a href='/about'>About</a>
+          <a href='/team'>Team</a>
           <a href='/outreach'>Outreach</a>
           <a href='/app'>IAP CPR App</a>
           <a href='/contact'>Contact</a>
