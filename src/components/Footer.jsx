@@ -22,24 +22,25 @@ export default function Foot() {
         </div>
         <p className='text-base font-light'>+91 9096590376</p>
       </div>
-
-      <div className='flex flex-col items-center flex-1'>
-        <div>
-          <h4 className='text-lg font-medium mb-4'>Quick Links</h4>
-          <ul className='text-base font-light'>
-            <li>
-              <a href='#'>Home</a>
-            </li>
-            <li>
-              <a href='#'>Team</a>
-            </li>
-            <li>
-              <a href='#'>Outreach</a>
-            </li>
-            <li>
-              <a href='#'>IAP CPR App</a>
-            </li>
-          </ul>
+      <div>
+        <div className='flex flex-col items-center flex-1'>
+          <div>
+            <h4 className='text-lg font-medium mb-4'>Quick Links</h4>
+            <ul className='text-base font-light'>
+              <li>
+                <a href='#'>Home</a>
+              </li>
+              <li>
+                <a href='#'>Team</a>
+              </li>
+              <li>
+                <a href='#'>Outreach</a>
+              </li>
+              <li>
+                <a href='#'>IAP CPR App</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
