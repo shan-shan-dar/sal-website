@@ -3,7 +3,7 @@ import Nav from "../components/Navigation";
 import Layout from "../layouts/Layout.astro";
 import Stat from "../components/StatDisplay";
 import Testi from "../components/TestimonialCard";
-import Carousel from "../components/Carousel.astro";
+import MySwiper from "../components/Swiper.jsx";
 ---
 
 <Layout>
@@ -173,6 +173,8 @@ import Carousel from "../components/Carousel.astro";
           </h3>
         </div>
       </div>
+
+      <MySwiper client:load />
 
       <!-- Action Button -->
       <button
