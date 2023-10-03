@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 
 export default function MySwiper() {
   return (
-    <div className='flex mt-16 select-none'>
+    <div className='flex mt-10 select-none'>
       <div className='swiper-button-prev-custom text-lightgreen hover:opacity-50 transition-all p-2 rounded-full my-auto mx-auto object-fit'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
