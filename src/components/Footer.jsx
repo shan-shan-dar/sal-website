@@ -2,7 +2,7 @@ export default function Foot() {
   //return the navbar
   return (
     <footer className='bg-white text-dartmouth py-10 flex justify-between px-40'>
-      <div>
+      <div className='flex-1'>
         <h4 className='text-2xl font-bold mb-4'>Save a Life</h4>
         <p className='text-base font-light'>
           Sahyadri School KFI
@@ -15,15 +15,22 @@ export default function Foot() {
         </p>
       </div>
 
-      <div>
-        <h4 className='text-lg font-medium mb-4'>Contact</h4>
-        <div className='flex'>
-          <p className='text-base font-light'>initiative.savealife@gmail.com</p>
+      <div className='flex-1'>
+        <div className='flex flex-col items-center'>
+          <div>
+            <h4 className='text-lg font-medium mb-4'>Contact</h4>
+            <div className='flex'>
+              <p className='text-base font-light'>
+                initiative.savealife@gmail.com
+              </p>
+            </div>
+            <p className='text-base font-light'>+91 9096590376</p>
+          </div>
         </div>
-        <p className='text-base font-light'>+91 9096590376</p>
       </div>
-      <div>
-        <div className='flex flex-col items-center flex-1'>
+
+      <div className='flex-1'>
+        <div className='flex flex-col items-center'>
           <div>
             <h4 className='text-lg font-medium mb-4'>Quick Links</h4>
             <ul className='text-base font-light'>

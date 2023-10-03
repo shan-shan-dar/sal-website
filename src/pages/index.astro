@@ -1,8 +1,6 @@
 ---
-import Nav from "../components/Navigation";
 import Layout from "../layouts/Layout.astro";
 import Stat from "../components/StatDisplay";
-import Testi from "../components/TestimonialCard";
 import MySwiper from "../components/Swiper.jsx";
 ---
 
@@ -71,8 +69,8 @@ import MySwiper from "../components/Swiper.jsx";
   >
     <Stat number='52' label='Training Sessions Conducted' />
     <Stat number='24' label='Communities Empowered' />
-    <Stat number='5K+' label='Individuals Reached' />
-    <Stat number='1K+' label='IAP CPR App Downloads' />
+    <Stat number='5K+' label='Individuals <br> Trained' />
+    <Stat number='3K+' label='IAP CPR App Downloads' />
   </section>
 
   <section id='rural-outreach' class='py-20 px-40 bg-darkest'>
@@ -83,7 +81,7 @@ import MySwiper from "../components/Swiper.jsx";
       </h2>
 
       <!-- Grid for Icons and Descriptions -->
-      <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
+      <div class='flex items-center justify-between'>
         <!-- Icon 1: Hands-on -->
         <div class='flex flex-col items-center'>
           <svg

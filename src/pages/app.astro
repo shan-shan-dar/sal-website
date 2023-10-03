@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main class='py-6 bg-darkest'>
+    <div>
+      <h2
+        class='px-14 text-10xl font-bitter text-lightgreen opacity-60 font-extrabold mb-16'
+      >
+        IAP CPR App
+      </h2>
+
+      <div class='px-40'>
+        <div class='grid grid-cols-2 gap-20 mb-28'>
+          <!-- Section 1 -->
+          <div>
+            <h3 class='font-bitter font-bold text-athena text-4xl mb-5'>
+              From Learnings to Innovation
+            </h3>
+            <p class='font-poppins font-normal text-white text-xl'>
+              Through conversations with the community, we identified a critical
+              gap in our training programs. Since trainees didn't couldn't
+              practice CPR frequently, their knowledge and skills quickly
+              atrophied. To ensure accessibility of information, I developed the
+              CPR App.
+            </p>
+          </div>
+
+          <!-- Section 2 -->
+          <div>
+            <h3 class='font-bitter font-bold text-athena text-4xl mb-5'>
+              "We Train People to Save Lives"
+            </h3>
+            <p class='font-poppins font-normal text-white text-xl'>
+              After pitching the app to the Indian Academy of Pediatrics (IAP)
+              board, we received endorsement and generous support for future
+              development. The app is powered by the IAP ALS-BLS Group, whose
+              motto, "We Train People to Save Lives," resonates with our
+              mission.
+            </p>
+          </div>
+        </div>
+
+        <section>
+          <div class='flex gap-20 mb-16'>
+            <div class='flex-1'>
+              <img src='/training.png' alt='Image 1' class='rounded-4xl' />
+            </div>
+            <div class='flex-1 flex flex-col justify-center'>
+              <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
+                Training Module
+              </h3>
+              <p class='font-poppins font-normal text-white text-lg'>
+                The Training Module is an excellent tool to learn and revise CPR
+                knowledge. It introduces the science behind CPR, as well as the
+                scope and learning objectives of the app. With longer in-depth
+                videos and elaborate and clear text, this module covers the
+                theory behind each step, from assessment to performing CPR.
+              </p>
+            </div>
+          </div>
+
+          <div class='flex gap-20 mb-16'>
+            <div class='flex-1 flex flex-col justify-center'>
+              <h3 class='font-bitter font-bold text-lightgreen text-4xl mb-8'>
+                Practice Module
+              </h3>
+              <p class='font-poppins font-normal text-white text-lg'>
+                The Practice Module combines real-time user feedback and concise
+                audio-visual instructions to immerse you in a simulated
+                emergency situation, allowing you to practice your techniques
+                with or without a mannequin. Apply your learnings from the
+                Training Module to solidify your skills.
+              </p>
+            </div>
+            <div class='flex-1'>
+              <img src='/practice.png' alt='Image 1' class='rounded-4xl' />
+            </div>
+          </div>
+        </section>
+
+        <button
+          class='my-16 mx-auto outline-white hover:outline-lightgreen outline bg-white hover:bg-lightgreen transition-all text-dartmouth text-xl font-semibold px-6 py-3 rounded-lg flex items-center'
+        >
+          <div class='text-left mr-3'>
+            <span class='text-sm font-medium'>Download the</span><br />IAP CPR
+            App
+          </div>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='w-8 h-8'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25'
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </main>
+</Layout>
