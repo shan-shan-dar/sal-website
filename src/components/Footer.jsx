@@ -35,16 +35,16 @@ export default function Foot() {
             <h4 className='text-lg font-medium mb-4'>Quick Links</h4>
             <ul className='text-base font-light'>
               <li>
-                <a href='#'>Home</a>
+                <a href='/'>Home</a>
               </li>
               <li>
-                <a href='#'>Team</a>
+                <a href='/team'>Team</a>
               </li>
               <li>
-                <a href='#'>Outreach</a>
+                <a href='/outreach'>Outreach</a>
               </li>
               <li>
-                <a href='#'>IAP CPR App</a>
+                <a href='/app'>IAP CPR App</a>
               </li>
             </ul>
           </div>

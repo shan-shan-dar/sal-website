@@ -14,7 +14,6 @@ export default function Nav() {
           <a href='/team'>Team</a>
           <a href='/outreach'>Outreach</a>
           <a href='/app'>IAP CPR App</a>
-          <a href='/contact'>Contact</a>
         </div>
       </nav>
     </div>
