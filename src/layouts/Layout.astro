@@ -24,10 +24,26 @@ import Foot from "../components/Footer";
     <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
   </head>
   <body class='font-poppins bg-white'>
-    <main>
+    <main class='hidden lg:block'>
       <Nav client:load />
       <slot />
       <Foot client:load />
     </main>
+    <div class='flex justify-center items-center h-screen'>
+      <div class='text-center'>
+        <!-- Title -->
+        <h2
+          class='text-6xl font-extrabold font-bitter text-dartmouth mb-6 mt-6'
+        >
+          Small Screens,<br />Big Plans
+        </h2>
+
+        <p class='text-2xl mt-10 mx-auto max-w-[40ch] text-darkest'>
+          The mobile-friendly website is in development and will be available
+          soon. In the meantime, I recommend viewing this site on a laptop or
+          desktop for the best experience. Apologies for any inconvenience.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
